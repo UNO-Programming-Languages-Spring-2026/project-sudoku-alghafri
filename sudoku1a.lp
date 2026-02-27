@@ -14,4 +14,4 @@ num(1..4).
 % 4. Honor initial facts
 sudoku(X,Y,N) :- initial(X,Y,N).
 
-#show sudoku/3.
+#show sudoku/3
