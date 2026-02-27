@@ -1,4 +1,3 @@
-% sudoku1b.lp (fixed)
 row(1..4).
 col(1..4).
 num(1..4).
@@ -13,4 +12,5 @@ num(1..4).
 % Correct subgrid mapping using integer division
 subgrid(X,Y,G) :- row(X), col(Y), G = 1 + ((X-1)//2)*2 + ((Y-1)//2).
 
+% Make sure the facts appear in the stable model
 #show subgrid/3.
