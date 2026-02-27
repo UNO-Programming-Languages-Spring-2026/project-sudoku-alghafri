@@ -5,7 +5,7 @@ num(1..4).
 % Each cell has exactly one number
 1 { sudoku(X,Y,N) : num(N) } 1 :- row(X), col(Y).
 
-% Respect initial values
+% Respect initial cells
 :- initial(X,Y,N), not sudoku(X,Y,N).
 
 % No duplicate number in a row
